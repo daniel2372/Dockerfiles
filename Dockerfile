@@ -1,7 +1,7 @@
 FROM ubuntu
 RUN echo "Run One Updated"
-RUN echo "RUN TWO"
-RUN echo "RUN Three"
+&& echo "RUN TWO"
+&& echo "RUN Three"
 CMD date
 ENTRYPOINT [ "echo", "hello" ]
 
